@@ -10,4 +10,4 @@ seaborn==0.13.2
 streamlit==1.31.1
 ```
 ## Run Streamlit App
-## Link Ke Dashboard
+https://tugasproyektrya.streamlit.app/
