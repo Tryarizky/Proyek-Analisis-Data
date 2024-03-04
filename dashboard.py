@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-all_df = pd.read_csv(r'C:\Users\trya2\submission\dashboard\bike_merge.csv')
+all_df = pd.read_csv("bike_merge.csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
