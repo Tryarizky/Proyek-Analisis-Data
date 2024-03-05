@@ -1,6 +1,9 @@
 # Proyek-Analisis-Data
 ## Setup Environment
 ```
+conda create --name main-ds python=3.9
+conda activate main-ds
+
 pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 Babel==2.14.0
 markdown-it-py==3.0.0
