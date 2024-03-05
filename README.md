@@ -13,4 +13,7 @@ seaborn==0.13.2
 streamlit==1.31.1
 ```
 ## Run Streamlit App
+streamlit run dashboard.py
+
+## URL untuk dashboard
 https://tugasproyektrya.streamlit.app/
