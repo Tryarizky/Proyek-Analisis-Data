@@ -164,9 +164,10 @@ st.markdown("4 -> Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog")
 def main1():
     st.markdown("#### Interpretasi untuk mengetahui musim dengan jumlah penyewa sepeda terbanyak")
 
-    # Tombol untuk menampilkan keterangan
-    if st.button("Tampilkan Keterangan 1"):
-        st.success("Berdasarkan plot grafik di atas, jumlah pelanggan terbanyak terjadi pada musim **Light Snow**, **Light Rain + Thunderstorm + Scattered Clouds**, dan **Light Rain + Scattered Clouds**")
+    # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
+    with st.expander("Tampilkan Keterangan 1"):
+        st.write("Berdasarkan plot grafik di atas, jumlah pelanggan terbanyak terjadi pada musim **Light Snow**, **Light Rain + Thunderstorm + Scattered Clouds**, dan **Light Rain + Scattered Clouds**")
+
 if __name__ == "__main__":
     main1()
 
