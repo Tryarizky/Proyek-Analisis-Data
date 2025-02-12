@@ -13,12 +13,6 @@ all_df.reset_index(inplace=True)
  
 for column in datetime_columns:
     all_df[column] = pd.to_datetime(all_df[column])
- 
-# URL gambar dengan format RAW dari GitHub
-image_url = "https://raw.githubusercontent.com/Tryarizky/Proyek-Analisis-Data/main/Bike%20(42%20x%2042%20cm).png"
-
-with st.sidebar:
-    st.image(image_url, caption="Logo Aplikasi", use_column_width=True)
 
 st.write(
     """
@@ -55,7 +49,11 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# URL gambar dengan format RAW dari GitHub
+image_url = "https://raw.githubusercontent.com/Tryarizky/Proyek-Analisis-Data/main/Bike%20(42%20x%2042%20cm).png"
 with st.sidebar:
+    st.image(image_url, caption="Logo Aplikasi", use_column_width=True)
+ 
     # Menampilkan rentang waktu secara statis dengan judul yang sama formatnya seperti bagian lain
     st.markdown("---")  # Garis pemisah
     st.markdown('<p class="sidebar-title">📅 Rentang Waktu Data</p>', unsafe_allow_html=True)
