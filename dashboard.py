@@ -122,7 +122,7 @@ st.markdown("#### Jumlah Pelanggan Berdasarkan Musim :fallen_leaf: ")
 
 fig, ax = plt.subplots(figsize=(20, 10))
 
-colors1 = ["#D3D3D3", "#D3D3D3", "#FFC0CB", "#D3D3D3", "#D3D3D3"]
+colors1 = ["#A2C2E6", "#A2C2E6", "#FFC0CB", "#A2C2E6", "#A2C2E6"]
 sns.barplot(
     y="customer_count",
     x="season",
@@ -206,7 +206,7 @@ ax[0].tick_params(axis='x', labelsize=35)
 
 # frequency
 frequency_df = rf_df.sort_values(by="frequency", ascending=False).head(12)
-colors_frequency = ["#ADD8E6"] * len(frequency_df)
+colors_frequency = ["#A2C2E6"] * len(frequency_df)
 sns.barplot(y="frequency", x="month", data=frequency_df, palette=colors_frequency, ax=ax[1])
 ax[1].set_ylabel(None)
 ax[1].set_xlabel("Bulan ke-", fontsize=30)
