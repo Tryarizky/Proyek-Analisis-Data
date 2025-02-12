@@ -165,7 +165,7 @@ def main1():
     st.markdown("#### Interpretasi untuk mengetahui musim dengan jumlah penyewa sepeda terbanyak")
 
     # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
-    with st.expander("Tampilkan Keterangan 1"):
+    with st.expander("Tampilkan Interpretasi"):
         st.write("Berdasarkan plot grafik di atas, jumlah pelanggan terbanyak terjadi pada musim **Light Snow**, **Light Rain + Thunderstorm + Scattered Clouds**, dan **Light Rain + Scattered Clouds**")
 
 if __name__ == "__main__":
@@ -221,13 +221,12 @@ st.pyplot(fig)
 def main2():
     st.markdown("#### Interpretasi untuk mengetahui intensitas persewaan dalam beberapa bulan terakhir")
 
-    # Tombol untuk menampilkan keterangan
-    if st.button("Tampilkan Keterangan 2"):
-        st.success("Pada beberapa bulan terakhir, pelanggan melakukan penyewaan cukup sering yang dapat dilihat dari recency yang nilainya semakin rendah. Jumlah penyewa juga cukup banyak dalam beberapa bulan terakhir yang dapat dilihat dari nilai frekuensinya.")
+    # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
+    with st.expander("Tampilkan Interpretasi"):
+        st.write("Pada beberapa bulan terakhir, pelanggan melakukan penyewaan cukup sering yang dapat dilihat dari recency yang nilainya semakin rendah. Jumlah penyewa juga cukup banyak dalam beberapa bulan terakhir yang dapat dilihat dari nilai frekuensinya.")
 
 if __name__ == "__main__":
     main2()
-
 
 all_df['dteday'] = pd.to_datetime(all_df['dteday'])
 all_df.set_index('dteday', inplace=True)
@@ -285,9 +284,9 @@ st.pyplot(plt.gcf())
 def main3():
     st.markdown("#### Interpretasi grafik untuk mengetahui pola waktu jumlah penyewa sepeda")
 
-    # Tombol untuk menampilkan keterangan
-    if st.button("Tampilkan Keterangan 3"):
-        st.success("Jumlah penyewa sepeda rata-rata meningkat pada jam 16.00-17.00, artinya pelanggan banyak bermain sepeda di waktu sore.")
+    # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
+    with st.expander("Tampilkan Interpretasi"):
+        st.write("Jumlah penyewa sepeda rata-rata meningkat pada jam 16.00-17.00, artinya pelanggan banyak bermain sepeda di waktu sore.")
 
 if __name__ == "__main__":
     main3()
