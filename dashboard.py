@@ -244,19 +244,20 @@ st.markdown(
         
         /* Mengatur warna garis (track) slider menjadi biru soft */
         [data-testid="stSlider"] > div > div {
-            background-color: #ADD8E6 !important; /* Warna biru soft (light blue) */
+            background-color: #A2C2E6 !important; /* Warna biru soft */
         }
         
         /* Mengatur warna bulatan (handle) menjadi pink soft */
         [data-testid="stSlider"] > div > div > div {
-            background-color: #FFB6C1 !important; /* Warna pink soft (light pink) */
-            border: 2px solid #FF69B4 !important; /* Border pink yang sedikit lebih terang */
+            background-color: #FFAAC1 !important; /* Warna pink soft */
+            border: 2px solid #FF69B4 !important; /* Border pink terang */
         }
+        
         /* Mengubah warna angka pada slider */
         [data-testid="stTickBarMin"], 
         [data-testid="stTickBarMax"],
         [data-testid="stTickBarValue"] {
-            color: #444 !important; /* Warna abu-abu gelap untuk kontras */
+            color: #444 !important; /* Warna abu-abu gelap */
             font-weight: bold;
         }
     </style>
