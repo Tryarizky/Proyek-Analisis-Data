@@ -5,7 +5,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-all_df = pd.read_csv(r"D:\Bangkit - Machine Learning\Dicoding\submission\dashboard\bike_merge.csv")
+all_df = pd.read_csv("bike_merge.csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
