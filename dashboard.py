@@ -115,8 +115,6 @@ def create_rf_df(df):
 # Menampilkan DataFrame RF
     return rf_df
 
-
-
 st.markdown("### Demografi Pelanggan")
 st.markdown("#### Jumlah Pelanggan Berdasarkan Musim :fallen_leaf: ")
 
@@ -162,10 +160,7 @@ st.markdown("4 -> Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog")
 
 
 def main1():
-    st.markdown("#### Interpretasi untuk mengetahui musim dengan jumlah penyewa sepeda terbanyak")
-
-    # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
-    with st.expander("Tampilkan Interpretasi"):
+    with st.expander("#### Interpretasi untuk mengetahui musim dengan jumlah penyewa sepeda terbanyak"):
         st.write("Berdasarkan plot grafik di atas, jumlah pelanggan terbanyak terjadi pada musim **Light Snow**, **Light Rain + Thunderstorm + Scattered Clouds**, dan **Light Rain + Scattered Clouds**")
 
 if __name__ == "__main__":
@@ -219,10 +214,7 @@ ax[1].tick_params(axis='x', labelsize=35)
 st.pyplot(fig)
 
 def main2():
-    st.markdown("#### Interpretasi untuk mengetahui intensitas persewaan dalam beberapa bulan terakhir")
-
-    # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
-    with st.expander("Tampilkan Interpretasi"):
+    with st.expander("#### Interpretasi untuk mengetahui intensitas persewaan dalam beberapa bulan terakhir"):
         st.write("Pada beberapa bulan terakhir, pelanggan melakukan penyewaan cukup sering yang dapat dilihat dari recency yang nilainya semakin rendah. Jumlah penyewa juga cukup banyak dalam beberapa bulan terakhir yang dapat dilihat dari nilai frekuensinya.")
 
 if __name__ == "__main__":
@@ -282,10 +274,7 @@ plt.xticks(rotation=45, ha='right')
 st.pyplot(plt.gcf())
 
 def main3():
-    st.markdown("#### Interpretasi grafik untuk mengetahui pola waktu jumlah penyewa sepeda")
-
-    # Menggunakan expander untuk menampilkan keterangan tanpa perlu loading tambahan
-    with st.expander("Tampilkan Interpretasi"):
+    with st.expander("#### **Interpretasi Grafik untuk Mengetahui Pola Waktu Jumlah Penyewa Sepeda**"):
         st.write("Jumlah penyewa sepeda rata-rata meningkat pada jam 16.00-17.00, artinya pelanggan banyak bermain sepeda di waktu sore.")
 
 if __name__ == "__main__":
